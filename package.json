@@ -1,0 +1,24 @@
+{
+  "name": "@docx4serverless/docx-to-pdf-conversion-node-js",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "build:production": "npm run prestart && npm prune --production",
+    "watch": "tsc --w",
+    "prestart": "npm run build && func extensions install",
+    "start:host": "func start",
+    "start": "npm-run-all --parallel start:host watch",
+    "test": "echo \"No tests yet...\"",
+    "docx4serverless-install": "func extensions install --package \"DOCX_AI_SOFTWARE_LLC.Azure.WebJobs.Extensions.DocxAI\" --version \"1.0.4\""
+  },
+  "description": "",
+  "dependencies": {
+    "@docx-ai/docx4serverless": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@azure/functions": "^1.0.1-beta1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^3.3.3"
+  }
+}

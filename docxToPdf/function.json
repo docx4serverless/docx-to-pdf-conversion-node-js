@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "dataType": "binary",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "direction": "in",
+      "name": "docxAiService",
+      "type": "DocxAiService"
+    }
+  ],
+  "scriptFile": "../dist/docxToPdf/index.js"
+}

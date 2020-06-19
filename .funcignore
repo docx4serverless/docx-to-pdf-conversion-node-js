@@ -1,0 +1,8 @@
+**.pdb
+**.ilk
+**.iobj
+**.ipdb
+**.map
+**.ts
+**.csproj
+obj/
