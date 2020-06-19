@@ -2,6 +2,8 @@
 Easily convert docx to pdf using Microsoft Azure serverless functions:
 
 ```javascript
+    import { DocxWorker } from '@docx-ai/docx4serverless';
+
     const worker = await DocxWorker.createWorker(docxAiService);
     try {
         // import document and export as PDF:

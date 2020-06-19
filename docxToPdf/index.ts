@@ -1,5 +1,5 @@
 import { AzureFunction, Context, HttpRequest } from "@azure/functions"
-import { DocxWorker, DocxWorkerLogEntry } from '@docx-ai/docx4serverless';
+import { DocxWorker } from '@docx-ai/docx4serverless';
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest, docxAiService: any): Promise<void> {
     const worker = await DocxWorker.createWorker(docxAiService);
