@@ -9,7 +9,7 @@
     "start:host": "func start",
     "start": "npm-run-all --parallel start:host watch",
     "test": "echo \"No tests yet...\"",
-    "docx4serverless-install": "func extensions install --package \"DOCX_AI_SOFTWARE_LLC.Azure.WebJobs.Extensions.DocxAI\" --version \"1.0.4\""
+    "docx4serverless-install": "func extensions install --package \"DOCX_AI_SOFTWARE_LLC.Azure.WebJobs.Extensions.DocxAI\" --version \"1.0.5\""
   },
   "description": "",
   "dependencies": {
